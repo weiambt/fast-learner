@@ -1,4 +1,4 @@
-# Fast Learner - 极速学习助手
+# Fast Learner - 极速学习Skill
 
 > 让 AI 替你深度调研，让学习变成一场有结构的对话
 
