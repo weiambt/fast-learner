@@ -1,211 +1,216 @@
-# Fast Learner - 极速学习Skill
+# Fast Learner - Lightning-Fast Learning Skill
 
-> 让 AI 替你深度调研，让学习变成一场有结构的对话
+> Let AI conduct deep research for you, turning learning into a structured dialogue
 
 [![GitHub stars](https://img.shields.io/github/stars/your-repo/fast-learner)](https://github.com/weiambt/fast-learner)
 [![Version](https://img.shields.io/badge/version-1.0.0-blue)]()
 
-## 理念
+[English](./README.md) | **中文**
 
-**用最少的时间，抓住最核心的知识。**
+## Philosophy
 
-Fast Learner 相信高效学习不是填鸭式的堆砌信息，而是"调研-理解-内化-检验"的闭环。通过 AI 媒介，学习变成一场有结构的对话：先让 AI 完成深度调研，再通过交互答疑找到真正的疑惑点，最后以主动回忆完成真正的内化。
+**Spend the least time, grasp the most essential knowledge.**
 
-## 核心理念
+Fast Learner believes that efficient learning is not about cramming information, but rather a closed loop of "Research → Understand → Internalize → Verify". Through the AI medium, learning becomes a structured dialogue: first let AI complete deep research, then find your real points of confusion through interactive Q&A, and finally achieve true internalization through active recall.
 
-### 三大原则
+## Core Principles
 
-| 原则 | 说明 |
-|------|------|
-| **精准不冗余** | 只呈现最核心的内容，不念教科书 |
-| **理解驱动记忆** | 先建立框架和关联，再谈记忆 |
-| **以教促学** | 通过输出来检验输入，通过出题来巩固理解 |
+### Three Fundamental Principles
 
-### 四大学习阶段
+| Principle | Description |
+|-----------|-------------|
+| **Precise, Not Redundant** | Only present the most essential content, no textbook reading |
+| **Understanding Drives Memory** | Build frameworks and connections first, memory second |
+| **Teaching Promotes Learning** | Test input through output, solidify understanding through questioning |
+
+### Four Learning Stages
 
 ```
     ╭─────────────────────────────────────────────────────────────╮
-    │                     Fast Learner 学习闭环                     │
+    │                    Fast Learner Learning Loop               │
     ╰─────────────────────────────────────────────────────────────╯
 
                           ┌──────────┐
-                          │  AI调研   │
+                          │ AI Research│
                           └────┬─────┘
                                │
                                ▼
                           ┌──────────┐     ┌──────────┐
-                          │  交互答疑  │ ──▶│  测评检验  │
+                          │ Interactive│ ──▶│ Assessment│
+                          │   Q&A     │     │   Test   │
                           └────┬─────┘     └────┬─────┘
                                │               │
                                ▼               ▼
                           ┌──────────┐     ┌──────────┐
-                          │  生成笔记  │ ◀──│   学习成果 │
+                          │ Generate │ ◀──│ Learning │
+                          │  Notes   │     │  Results │
                           └──────────┘     └──────────┘
 
-    ※ 闭环说明：测评检验后可生成笔记，笔记也可触发新的答疑追问
+    ※ Loop explanation: After assessment, notes can be generated; notes can also trigger new follow-up questions
 ```
 
-## 设计亮点
+## Design Highlights
 
-### 1. 渐进式理解
-不要求用户一次性想清楚所有问题。先让 AI 完成调研，用户在对话中逐步提问，找到自己真正的疑惑点。
+### 1. Progressive Understanding
+Don't require users to figure out all their questions at once. Let AI complete the research first, then users ask questions progressively in the dialogue to find their real points of confusion.
 
-### 2. 多维度回答结构
-根据问题类型自动适配回答框架：
-- **概念理解类** → What/Why/ProsCons/Scenarios/Future
-- **工具使用类** → What/How/Examples/Caveats
-- **问题排查类** → Symptoms/Causes/Diagnosis/Solutions
-- **对比选择类** → A vs B/Scenarios/Recommendation
+### 2. Multi-Dimensional Answer Structure
+Automatically adapt the answer framework based on the type of question:
+- **Conceptual Understanding** → What/Why/ProsCons/Scenarios/Future
+- **Tool Usage** → What/How/Examples/Caveats
+- **Troubleshooting** → Symptoms/Causes/Diagnosis/Solutions
+- **Comparison & Choice** → A vs B/Scenarios/Recommendation
 
-### 3. 苏格拉底式追问
-先给简洁答案，等待用户追问。通过追问层层深入，真正理解而不是表面记住。
+### 3. Socratic Questioning
+Provide concise answers first, then wait for user follow-ups. Guide deep understanding through layered questioning, truly understanding rather than superficially memorizing.
 
-### 4. 学习技巧融合
-在回答中融入高效学习方法：
+### 4. Learning Technique Integration
+Integrate efficient learning methods into answers:
 
-**记忆技巧**
-- 口诀、联想、卡片复习
+**Memory Techniques**
+- Mnemonics, associations, flashcard reviews
 
-**理解技巧**
-- 类比生活场景、画架构图
+**Understanding Techniques**
+- Analogies to everyday life, drawing architecture diagrams
 
-**应用技巧**
-- 先跑 Demo 再深究、小步实践
+**Application Techniques**
+- Run demos first, then investigate deeply; practice in small steps
 
-**工程师级方法**
-- 第一性原理 — 回到最本质的定义
-- 费曼学习法 — 用简单语言解释复杂概念
-- 结构化思维 — MECE 原则分类
-- 刻意练习 — 聚焦薄弱环节
-- 输出驱动 — 通过教来学
+**Engineering-Level Methods**
+- First Principles — Return to the most essential definitions
+- Feynman Technique — Explain complex concepts in simple language
+- Structured Thinking — MECE principle for classification
+- Deliberate Practice — Focus on weak areas
+- Output-Driven — Learn by teaching
 
-## 安装方法
+## Installation
 
-### 方式一：适用于 Claude Code / Copilot CLI
+### Method 1: For Claude Code / Copilot CLI
 
-将 skill 复制到 `~/.claude/skills/` 目录：
+Copy the skill to the `~/.claude/skills/` directory:
 
 ```bash
-# 克隆或复制 skill 到 skills 目录
+# Clone or copy the skill to the skills directory
 git clone https://github.com/weiambt/fast-learner
 cp -r /path/to/fast-learner ~/.claude/skills/fast-learner
 
-# 重启 Claude Code / Copilot CLI，skill 将自动被发现
+# Restart Claude Code / Copilot CLI, the skill will be automatically discovered
 ```
 
-### 方式二：适用于其他平台
+### Method 2: For Other Platforms
 
-将 skill 复制到平台的 skills 目录（请参考对应平台的文档）。
+Copy the skill to the platform's skills directory (please refer to the corresponding platform's documentation).
 
-### 验证安装
+### Verify Installation
 
-安装成功后，可以通过以下方式验证：
-- 在对话中说"学习 XXX"，触发 skill
-- 说"/fast-learner" 查看 skill 是否正常加载
+After successful installation, you can verify it in the following ways:
+- Say "Learn XXX" in conversation to trigger the skill
+- Say "/fast-learner" to check if the skill loads properly
 
-## 快速开始
+## Quick Start
 
-### 触发方式
+### Trigger Methods
 
-| 触发词 | 动作 |
-|--------|------|
-| "学习 XXX" | 开始调研 XXX 主题 |
-| "总结" | 生成学习笔记 |
-| "出题" | 生成测评题目 |
-| "测评" | 开始测评检验 |
-| "追加" | 在笔记中追加内容 |
-| "修正" | 修正笔记内容 |
-| "导出" | 导出笔记格式转换 |
+| Trigger | Action |
+|---------|--------|
+| "Learn XXX" | Start researching topic XXX |
+| "Summarize" | Generate learning notes |
+| "Create Questions" | Generate assessment questions |
+| "Test" | Start assessment and verification |
+| "Append" | Append content to notes |
+| "Correct" | Correct note content |
+| "Export" | Export and convert note format |
 
-### 典型使用流程
+### Typical Usage Flow
 
 ```
-用户：我想学习 Go 并发编程
-AI：[Step 1] 调研中...
-     [Step 2] 完成，准备了以下内容：
-     - 核心概念：Goroutine、Channel
-     - 适用场景：IO密集型、高并发
-     - 最佳实践：避免泄露、使用 select
+User: I want to learn Go concurrency programming
+AI: [Step 1] Researching...
+    [Step 2] Complete, prepared the following:
+    - Core concepts: Goroutine, Channel
+    - Applicable scenarios: IO-bound, high concurrency
+    - Best practices: Avoid leaks, use select
 
-用户：Goroutine 和线程的区别是什么？
-AI：轻量级执行单元 vs 操作系统原生线程...
-     （简洁回答，等待追问）
+User: What's the difference between Goroutine and threads?
+AI: Lightweight execution units vs OS native threads...
+     (Concise answer, waiting for follow-up)
 
-用户：为什么需要 Channel？
-AI：[苏格拉底式] 你觉得直接共享内存有什么问题？
-     （通过追问引导深度理解）
+User: Why do we need Channel?
+AI: [Socratic] What do you think is the problem with direct shared memory?
+     (Guide deep understanding through questioning)
 
-用户：总结
-AI：[生成结构化笔记到 ~/fast-learner/]
+User: Summarize
+AI: [Generate structured notes to ~/fast-learner/]
 
-用户：出题
-AI：[生成3道选择+2道简答]
-用户：[作答]
-AI：[评分+解析+建议]
+User: Create questions
+AI: [Generate 3 multiple choice + 2 short answer questions]
+User: [Answer]
+AI: [Scoring + Analysis + Suggestions]
 ```
 
-## 工作目录
+## Working Directory
 
-默认工作目录：`~/fast-learner/`
+Default working directory: `~/fast-learner/`
 
-首次使用时会询问确认，用户可指定自定义路径。
+On first use, you will be asked to confirm, and you can specify a custom path.
 
 ```
 ~/fast-learner/
-├── 2024-01-15-Go并发编程学习笔记.md
-├── 2024-01-16-Python协程学习笔记.md
+├── 2024-01-15-Go-Concurrency-Notes.md
+├── 2024-01-16-Python-Coroutines-Notes.md
 └── ...
 ```
 
-## 文件结构
+## File Structure
 
 ```
 fast-learner/
-├── SKILL.md              # 主技能文件
-├── README.md             # 本文档
+├── SKILL.md              # Main skill file
+├── README.md             # English version
+├── README_zh.md          # Chinese version
 └── references/
-    └── note-template.md  # 笔记生成模板
+    └── note-template.md  # Note generation template
 ```
 
-## 设计哲学延伸
+## Design Philosophy Extension
 
-### 为什么需要一个学习助手？
+### Why Do We Need a Learning Assistant?
 
-我们发现技术学习有三大痛点：
+We identified three major pain points in technical learning:
 
-1. **信息过载** — 资料太多，不知道哪些是重点
-2. **理解碎片化** — 看懂了文字但无法形成体系理解
-3. **记忆不持久** — 学完就忘，无法长期记忆
+1. **Information Overload** — Too much material, don't know what's important
+2. **Fragmented Understanding** — Understand the words but can't form a systematic understanding
+3. **Unlasting Memory** — Learn and forget, can't retain long-term
 
-Fast Learner 通过"AI调研 + 结构化笔记 + 测评检验"的闭环，针对性地解决这三个问题。
+Fast Learner addresses these three problems specifically through the closed loop of "AI Research + Structured Notes + Assessment Verification".
 
-### 与传统学习方式的对比
+### Comparison with Traditional Learning Methods
 
-| 维度 | 传统方式 | Fast Learner |
-|------|----------|--------------|
-| 调研阶段 | 自己搜索，耗时且不全面 | AI 4步系统调研，5分钟内覆盖核心 |
-| 理解过程 | 单向输入，被动接收 | 交互式问答，主动思考 |
-| 笔记整理 | 手动整理，结构不一 | 模板驱动，结构统一 |
-| 效果检验 | 无或低效自测 | 主动回忆式测评 |
+| Dimension | Traditional Method | Fast Learner |
+|-----------|-------------------|--------------|
+| Research Phase | Self-search, time-consuming and incomplete | AI 4-step systematic research, core coverage in 5 minutes |
+| Understanding Process | One-way input, passive reception | Interactive Q&A, active thinking |
+| Note Organization | Manual organization, inconsistent structure | Template-driven, unified structure |
+| Effect Verification | None or inefficient self-testing | Active recall-style assessment |
 
-### 适用场景
+### Applicable Scenarios
 
-- 技术面试准备
-- 新技术快速入门
-- 知识体系梳理
-- 团队内部培训材料
-- 个人知识管理
+- Technical interview preparation
+- Quick start for new technologies
+- Knowledge system organization
+- Team internal training materials
+- Personal knowledge management
 
-## 更新日志
+## Changelog
 
 ### v1.0.0 (2024-01)
-- 首发版本
-- 支持 AI 调研、交互答疑、笔记生成、测评检验
+- Initial release
+- Support for AI research, interactive Q&A, note generation, and assessment verification
 
-## 贡献
+## Contributing
 
-欢迎提交 Issue 和 Pull Request！
+Issues and Pull Requests are welcome!
 
-## 许可证
+## License
 
 MIT License
