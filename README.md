@@ -5,7 +5,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/your-repo/fast-learner)](https://github.com/weiambt/fast-learner)
 [![Version](https://img.shields.io/badge/version-1.0.0-blue)]()
 
-[English](./README.md) | **中文**
+[English](./README.md) | [中文](./README_zh.md)
 
 ## Philosophy
 
